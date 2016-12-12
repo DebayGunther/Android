@@ -1,0 +1,99 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/bleu_clair"
+    >
+
+    <ImageView
+        android:id="@+id/iv_children_logo"
+        android:src="@drawable/tlchargement"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION : "
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login : "/>
+    <EditText
+        android:id="@+id/et_children_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password : "/>
+    <EditText
+        android:id="@+id/et_children_pwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <!-- espace entre les boutons-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email : "/>
+    <EditText
+        android:id="@+id/et_children_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/bt_children_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="=> Parent"
+        android:onClick="onChildrenClickManager"/><!-- attention: espace inutiles dans les " " -->
+
+    <Button
+        android:id="@+id/bt_children_liste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="=> Liste de version"
+        android:onClick="onChildrenClickManager"/>
+
+    <Button
+        android:id="@+id/bt_children_sauvegarde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer les données"
+        android:onClick="onChildrenClickManager"
+        android:background="@color/jaune"/>
+
+    <Button
+        android:id="@+id/bt_children_lecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="==> Lecture du fichier"
+        android:onClick="onChildrenClickManager"
+        android:background="@color/orange"
+        android:layout_marginTop="5dp"/>
+  <!--  <Button
+        android:id="@+id/bt_main_savedb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider le formulaire"
+        android:onClick=" onChildrenClickManager"
+        /> -->
+
+ <!--  <TextView
+        android:id="@+id/tv_children_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION :"
+        android:textSize="30sp"/>
+     -->
+
+
+</LinearLayout><!-- From: file:/D:/Ecole/3%20IRT%202015-2016/SYC/Android/MonProjet/app/src/main/res/layout/activity_children.xml -->
